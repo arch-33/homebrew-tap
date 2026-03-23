@@ -24,6 +24,10 @@ cask "inkognito" do
 
   app "Inkognito.app"
 
+  postflight do
+    system "xattr", "-dr", "com.apple.quarantine", "#{appdir}/Inkognito.app"
+  end
+
   zap trash: [
     "~/Library/Application Support/dev.arch-33.inkognito",
     "~/Library/Caches/dev.arch-33.inkognito",
