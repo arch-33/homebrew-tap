@@ -1,24 +1,20 @@
-cask "inkognito" do
-  version "0.0.2"
+cask "inkognito@0.0.1" do
+  version "0.0.1"
 
   on_arm do
     url "https://github.com/arch-33/inkognito/releases/download/v#{version}/Inkognito_#{version}_aarch64.dmg"
-    sha256 "41798de19a91e9349ea908726702bdb87acf11254cc44bbfb35e2b78f76e0176"
+    sha256 "0d86fc2168d6f2257dab6d1cd23d518021a8853f30fa06afd096438b3d6743ec"
   end
 
   on_intel do
     url "https://github.com/arch-33/inkognito/releases/download/v#{version}/Inkognito_#{version}_x64.dmg"
-    sha256 "2685e111289fed0cad3a01218aaa7095ead77c259b8cca7c9182bc34cdc8b523"
+    sha256 "1a37ad87b08bfeca053e654359edc528e67328b6c0754503751699dee47f5432"
   end
 
   name "Inkognito"
   desc "Privacy-focused markdown notepad with screen capture protection"
   homepage "https://arch-33.github.io/inkognito/"
 
-  livecheck do
-    url "https://github.com/arch-33/inkognito/releases/latest"
-    strategy :github_latest
-  end
 
   depends_on macos: ">= :catalina"
 
