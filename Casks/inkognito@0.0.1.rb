@@ -15,8 +15,7 @@ cask "inkognito@0.0.1" do
   desc "Privacy-focused markdown notepad with screen capture protection"
   homepage "https://arch-33.github.io/inkognito/"
 
-
-  depends_on macos: ">= :catalina"
+  depends_on macos: :catalina
 
   app "Inkognito.app"
 
